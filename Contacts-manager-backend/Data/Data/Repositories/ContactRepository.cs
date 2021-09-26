@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Core.Data.Repositories
 {
-    public class ContactsRepository : BaseRepository, IContactsRepository
+    public class ContactRepository : BaseRepository, IContactRepository
     {
-        public ContactsRepository(ApplicationDbContext context) : base(context) { }
+        public ContactRepository(ApplicationDbContext context) : base(context) { }
 
         public Task<Contact> GetAsync(int id)
         {

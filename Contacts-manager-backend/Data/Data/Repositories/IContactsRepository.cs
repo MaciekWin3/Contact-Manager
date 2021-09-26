@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Core.Data.Repositories
 {
-    public interface IContactsRepository
+    public interface IContactRepository
     {
         Task AddAsync(Contact contact);
         Task DeleteAsync(Contact contact);
